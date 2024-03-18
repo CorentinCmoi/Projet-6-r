@@ -1,7 +1,8 @@
 import { modalTop, loginLink, projectChange, hideFilter, upGalleryStyle, openEditPanel } from './constants.js';
 import { exitPanelCross, returnBtn, exitPanelCross2, deleteAllWorksButton, AddImageButton , btnSendImage, token } from './constants.js';
-import { openPanel, closePanel, displayWorksInPanel, openAddingPanel, returnBtnPanel, previewImage, generatedBtn } from './edit.js' ;
-import { deleteAllWorks } from './suppression.js' ;
+import { openPanel, closePanel, displayWorksInPanel, openAddingPanel, returnBtnPanel, previewImage } from './edit.js' ;
+import { generatedBtn } from './edit.js';
+import { deleteAllWorks } from './suppression.js';
 
 //// Gère le menu si connecté //// 
 function connected() {
@@ -13,7 +14,7 @@ function connected() {
   hideFilter.classList.replace('visible', 'hidden');
   upGalleryStyle.classList.replace('gallery_disconnected', 'gallery_connected');
 
-  //Affiche un lien de déconnexion
+  //Affiche le logout à la place du login
   loginLink.classList.replace('loginLink', 'logoutLink'),
   loginLink.innerHTML = '<a class="btn_deconnexion" href="#">logout</a>';
 }
@@ -63,9 +64,9 @@ export function tokenLogin() {
       }
 }
 
-        // Ouvre et ferme la fenêtre de modification des travaux
-        openEditPanel.addEventListener('click', openPanel);
-        projectChange.addEventListener('click', openPanel);
-        exitPanelCross.addEventListener('click', closePanel);
-        exitPanelCross2.addEventListener('click', closePanel);
-        returnBtn.addEventListener('click', returnBtnPanel);
+// Ouvre et ferme la fenêtre de modification des travaux
+openEditPanel.addEventListener('click', openPanel);
+projectChange.addEventListener('click', openPanel);
+exitPanelCross.addEventListener('click', closePanel);
+exitPanelCross2.addEventListener('click', closePanel);
+returnBtn.addEventListener('click', returnBtnPanel);

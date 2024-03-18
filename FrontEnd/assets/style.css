@@ -84,7 +84,7 @@ body {
 	margin-top: 80px;
 	max-width: 56%;
 	width: 630px;
-	height: 80%;
+	height: 800px;
 	background-color: white;
 	overflow: auto;
 	display: flex;
@@ -95,6 +95,8 @@ body {
 }
 
 .cross {
+	width: 20px;
+	height: 20px;
 	position: absolute;
 	right: 30px;
 	top: 20px;
@@ -195,7 +197,6 @@ body {
 	display: none;
 	width: 0;
 	height: 0;
-	size: 0;
 }
 
 .connected_and_visible {
