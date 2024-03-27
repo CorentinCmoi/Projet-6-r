@@ -56,10 +56,10 @@
 			<form id="addingWorkForm">				
 				<div class="addImagePlaceholder">
 					<div class="imgPlace">
-						<img id="ImgPreview" src="#" alt="Preview de l'image">						
+						<img id="ImgPreview">					
 						<div class="form-img">							
 							<i id="ImgIcon" class="fa-regular fa-image"></i>
-							<input  type="file" accept="images/*" id="ImputImg" name="ImputImg"/>
+							<input type="file" accept="images/*" id="ImputImg" name="ImputImg"/>
 							<label id="textImputLabel" for="ImputImg">+ Ajouter photo</label>
 							<span id="imgPrerequire">jpg, png: 4mo max</span>
 						</div>
@@ -72,7 +72,7 @@
 				<div class="categoriesForm">
 					<label for="category">Catégorie</label>
 					<select id="category" name="category">
-						<option value="0" selected></option>
+						<option value="0" label="Choisissez une catégorie" selected></option>
 						<option value="1">Objet</option>
 						<option value="2">Appartement</option>
 						<option value="3">Hôtel & restaurant</option>
